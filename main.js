@@ -1,5 +1,5 @@
 var landmarks = null;
-var google_maps_key = 'REPLACE_WITH_YOUR_KEY_HERE';
+var google_maps_key = 'AIzaSyB_Ipq843n28SCIsdx5RCNd3O1Q3AKfpOA';
 
 // Wait for page to load
 document.addEventListener('DOMContentLoaded', function(event) {
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 })
 
 function loadLandmarks() {
-	let url = 'https://api.sheety.co/phill/landmarksTemplate/landmarks';
+	let url = 'https://api.sheety.co/26bd883cf4676a241c33f41f2bbf7b92/googleMaps/landmarks';
 	fetch(url)
 	.then((response) => response.json())
 	.then(json => {
